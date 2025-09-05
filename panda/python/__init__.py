@@ -115,9 +115,13 @@ class Panda:
   # from https://github.com/commaai/openpilot/blob/103b4df18cbc38f4129555ab8b15824d1a672bdf/cereal/log.capnp#L648
   HW_TYPE_UNKNOWN = b'\x00'
   HW_TYPE_WHITE = b'\x01'
+  HW_TYPE_GREY_PANDA = b'\x02'
   HW_TYPE_BLACK = b'\x03'
+  HW_TYPE_PEDAL = b'\x04'
+  HW_TYPE_UNO = b'\x05'
   HW_TYPE_DOS = b'\x06'
   HW_TYPE_RED_PANDA = b'\x07'
+  HW_TYPE_RED_PANDA_V2 = b'\x08'
   HW_TYPE_TRES = b'\x09'
   HW_TYPE_CUATRO = b'\x0a'
 
@@ -131,7 +135,7 @@ class Panda:
   H7_DEVICES = [HW_TYPE_RED_PANDA, HW_TYPE_TRES, HW_TYPE_CUATRO]
 
   INTERNAL_DEVICES = (HW_TYPE_DOS, HW_TYPE_TRES, HW_TYPE_CUATRO)
-  DEPRECATED_DEVICES = (HW_TYPE_WHITE, HW_TYPE_BLACK)
+  DEPRECATED_DEVICES = (HW_TYPE_WHITE, HW_TYPE_BLACK) + (HW_TYPE_GREY_PANDA, HW_TYPE_PEDAL, HW_TYPE_UNO, HW_TYPE_RED_PANDA_V2)
 
   MAX_FAN_RPMs = {
     HW_TYPE_DOS: 6500,
@@ -233,10 +237,6 @@ class Panda:
     self._mcu_type = self.get_mcu_type()
     self.health_version, self.can_version, self.can_health_version = self.get_packets_versions()
     logger.debug("connected")
-
-    hw_type = self.get_type()
-    if hw_type in Panda.DEPRECATED_DEVICES:
-      print("WARNING: Using deprecated HW")
 
     # disable openpilot's heartbeat checks
     if self._disable_checks:
