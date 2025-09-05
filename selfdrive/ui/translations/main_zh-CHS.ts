@@ -75,8 +75,8 @@
         <translation>输入密码</translation>
     </message>
     <message>
-        <source>for "%1"</source>
-        <translation>网络名称："%1"</translation>
+        <source>for &quot;%1&quot;</source>
+        <translation>网络名称：&quot;%1&quot;</translation>
     </message>
     <message>
         <source>Prevent large data uploads when on a metered cellular connection</source>
@@ -118,177 +118,177 @@
     <name>DPPanel</name>
     <message>
         <source>Toyota / Lexus</source>
-        <translation type="deepseek-chat">丰田 / 雷克萨斯</translation>
+        <translation>丰田 / 雷克萨斯</translation>
     </message>
     <message>
         <source>Enable Door Auto Lock/Unlock</source>
-        <translation type="deepseek-chat">启用车门自动锁定/解锁</translation>
+        <translation>启用车门自动锁定/解锁</translation>
     </message>
     <message>
         <source>Enable TSS1 SnG Mod</source>
-        <translation type="deepseek-chat">启用TSS1 SnG 模式</translation>
+        <translation>启用TSS1 SnG 模式</translation>
     </message>
     <message>
         <source>Use Stock Longitudinal Control</source>
-        <translation type="deepseek-chat">使用原厂长距离控制</translation>
+        <translation>使用原厂长距离控制</translation>
     </message>
     <message>
         <source>VW / Audi / Skoda</source>
-        <translation type="deepseek-chat">大众 / 奥迪 / 斯柯达</translation>
+        <translation>大众 / 奥迪 / 斯柯达</translation>
     </message>
     <message>
         <source>Enable MQB A0 SnG Mod</source>
-        <translation type="deepseek-chat">启用MQB A0 SnG模式</translation>
+        <translation>启用MQB A0 SnG模式</translation>
     </message>
     <message>
         <source>PQ Steering Patch</source>
-        <translation type="deepseek-chat">PQ转向补丁</translation>
+        <translation>PQ转向补丁</translation>
     </message>
     <message>
         <source>Avoid EPS Lockout</source>
-        <translation type="deepseek-chat">避免EPS锁定</translation>
+        <translation>避免EPS锁定</translation>
     </message>
     <message>
         <source>Mazda</source>
-        <translation type="deepseek-chat">马自达</translation>
+        <translation>马自达</translation>
     </message>
     <message>
         <source>Lateral Ctrl</source>
-        <translation type="deepseek-chat">横向控制</translation>
+        <translation>横向控制</translation>
     </message>
     <message>
         <source>Always-on Lane Keeping Assist (ALKA)</source>
-        <translation type="deepseek-chat">始终开启的车道保持辅助 (ALKA)</translation>
+        <translation>始终开启的车道保持辅助 (ALKA)</translation>
     </message>
     <message>
         <source>Road Edge Detection (RED)</source>
-        <translation type="deepseek-chat">道路边缘检测 (RED)</translation>
+        <translation>道路边缘检测 (RED)</translation>
     </message>
     <message>
         <source>Block lane change assist when the system detects the road edge.
-NOTE: This will show 'Car Detected in Blindspot' warning.</source>
-        <translation type="deepseek-chat">当系统检测到道路边缘时，阻止变道辅助。
+NOTE: This will show &apos;Car Detected in Blindspot&apos; warning.</source>
+        <translation>当系统检测到道路边缘时，阻止变道辅助。
 注意：此时将显示“盲点检测到车辆”警告。
 
 （注：根据用户提供的ISO 639语言代码要求，采用简体中文翻译。翻译要点说明：
-1. "Block lane change assist" 译为"阻止变道辅助"，符合车载系统功能术语习惯
-2. "road edge" 译为"道路边缘"而非"路边"，更准确体现驾驶场景
+1. &quot;Block lane change assist&quot; 译为&quot;阻止变道辅助&quot;，符合车载系统功能术语习惯
+2. &quot;road edge&quot; 译为&quot;道路边缘&quot;而非&quot;路边&quot;，更准确体现驾驶场景
 3. 保留英文引号样式并翻译其中内容，符合中文技术文档规范
-4. "warning" 统一译为"警告"，保持与汽车行业术语一致性）</translation>
+4. &quot;warning&quot; 统一译为&quot;警告&quot;，保持与汽车行业术语一致性）</translation>
     </message>
     <message>
         <source>LCA Speed:</source>
-        <translation type="deepseek-chat">LCA速度：</translation>
+        <translation>LCA速度：</translation>
     </message>
     <message>
         <source>Off = Disable LCA
 1 mph ≈ 1.2 km/h</source>
-        <translation type="deepseek-chat">关闭 = 禁用LCA（车道居中辅助）
+        <translation>关闭 = 禁用LCA（车道居中辅助）
 1 英里/小时 ≈ 1.2 公里/小时
 
-（注：LCA为Lane Centering Assist缩写，采用"车道居中辅助"的通用译法，符合汽车技术术语规范。速度单位换算保留数字精度，使用"≈"符号表示近似值，符合中文技术文档表达习惯。）</translation>
+（注：LCA为Lane Centering Assist缩写，采用&quot;车道居中辅助&quot;的通用译法，符合汽车技术术语规范。速度单位换算保留数字精度，使用&quot;≈&quot;符号表示近似值，符合中文技术文档表达习惯。）</translation>
     </message>
     <message>
         <source> mph</source>
-        <translation type="deepseek-chat">英里每小时</translation>
+        <translation>英里每小时</translation>
     </message>
     <message>
         <source>Off</source>
-        <translation type="deepseek-chat">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Auto Lane Change after:</source>
-        <translation type="deepseek-chat">自动变道后：</translation>
+        <translation>自动变道后：</translation>
     </message>
     <message>
         <source>Off = Disable Auto Lane Change.</source>
-        <translation type="deepseek-chat">关闭 = 禁用自动变道。</translation>
+        <translation>关闭 = 禁用自动变道。</translation>
     </message>
     <message>
         <source> sec</source>
-        <translation type="deepseek-chat">秒</translation>
+        <translation>秒</translation>
     </message>
     <message>
         <source>Longitudinal Ctrl</source>
-        <translation type="deepseek-chat">纵向控制</translation>
+        <translation>纵向控制</translation>
     </message>
     <message>
         <source>Use External Radar</source>
-        <translation type="deepseek-chat">使用外部雷达</translation>
+        <translation>使用外部雷达</translation>
     </message>
     <message>
         <source>See https://github.com/eFiniLan/openpilot-ext-radar-addon for more information.</source>
-        <translation type="deepseek-chat">更多信息请参见 https://github.com/eFiniLan/openpilot-ext-radar-addon。</translation>
+        <translation>更多信息请参见 https://github.com/eFiniLan/openpilot-ext-radar-addon。</translation>
     </message>
     <message>
         <source>Use USB Serial Radar</source>
-        <translation type="deepseek-chat">使用USB串行雷达</translation>
+        <translation type="vanished">使用USB串行雷达</translation>
     </message>
     <message>
         <source>Enable Adaptive Coasting Mode (ACM)</source>
-        <translation type="deepseek-chat">启用自适应滑行模式（ACM）</translation>
+        <translation>启用自适应滑行模式（ACM）</translation>
     </message>
     <message>
         <source>Adaptive Coasting Mode (ACM) reduces braking to allow smoother coasting when appropriate.
 DOES NOT WORK with Experimental Mode enabled.</source>
-        <translation type="deepseek-chat">自适应滑行模式（ACM）可在适当情况下减少制动，实现更平稳的滑行。
+        <translation>自适应滑行模式（ACM）可在适当情况下减少制动，实现更平稳的滑行。
 启用实验模式时此功能无效。</translation>
     </message>
     <message>
         <source>Downhill Only</source>
-        <translation type="deepseek-chat">仅限下坡</translation>
+        <translation>仅限下坡</translation>
     </message>
     <message>
         <source>Limited to downhill driving.</source>
-        <translation type="deepseek-chat">限于下坡驾驶。</translation>
+        <translation>限于下坡驾驶。</translation>
     </message>
     <message>
         <source>Adaptive Experimental Mode (AEM)</source>
-        <translation type="deepseek-chat">自适应实验模式 (AEM)</translation>
+        <translation>自适应实验模式 (AEM)</translation>
     </message>
     <message>
         <source>Adaptive mode switcher between ACC and Blended based on driving context.</source>
-        <translation type="deepseek-chat">根据驾驶情境在ACC（自适应巡航）与混合模式之间切换的自适应模式切换器。</translation>
+        <translation>根据驾驶情境在ACC（自适应巡航）与混合模式之间切换的自适应模式切换器。</translation>
     </message>
     <message>
         <source>UI</source>
-        <translation type="deepseek-chat">用户界面</translation>
+        <translation>用户界面</translation>
     </message>
     <message>
         <source>Display Radar Tracks</source>
-        <translation type="deepseek-chat">显示雷达轨迹</translation>
+        <translation>显示雷达轨迹</translation>
     </message>
     <message>
         <source>Rainbow Driving Path like Tesla</source>
-        <translation type="deepseek-chat">彩虹驾驶路径（类似特斯拉风格）</translation>
+        <translation>彩虹驾驶路径（类似特斯拉风格）</translation>
     </message>
     <message>
         <source>Why not?</source>
-        <translation type="deepseek-chat">为什么不呢？</translation>
+        <translation>为什么不呢？</translation>
     </message>
     <message>
         <source>Std.</source>
-        <translation type="deepseek-chat">标准</translation>
+        <translation>标准</translation>
     </message>
     <message>
         <source>MAIN+</source>
-        <translation type="deepseek-chat">主界面+</translation>
+        <translation>主界面+</translation>
     </message>
     <message>
         <source>OP+</source>
-        <translation type="deepseek-chat">OP+</translation>
+        <translation>OP+</translation>
     </message>
     <message>
         <source>MAIN-</source>
-        <translation type="deepseek-chat">主界面</translation>
+        <translation>主界面</translation>
     </message>
     <message>
         <source>OP-</source>
-        <translation type="deepseek-chat">OP-</translation>
+        <translation>OP-</translation>
     </message>
     <message>
         <source>Display Mode</source>
-        <translation type="deepseek-chat">显示模式</translation>
+        <translation>显示模式</translation>
     </message>
     <message>
         <source>Std. - Stock behavior.
@@ -296,99 +296,99 @@ MAIN+ - ACC MAIN on = Display ON.
 OP+ - OP enabled = Display ON.
 MAIN- - ACC MAIN on = Display OFF
 OP- - OP enabled = Display OFF.</source>
-        <translation type="deepseek-chat">标准 - 标准模式（保持原车行为）。
+        <translation>标准 - 标准模式（保持原车行为）。
 主控+ - ACC主电源开启时，显示屏亮起。
 OP+ - 开启Openpilot时，显示屏亮起。
 主控- - ACC主电源开启时，显示屏关闭。
 OP- - 开启Openpilot时，显示屏关闭。
 
-（注：根据openpilot系统特性，采用"主控"对应ACC电源状态，"OP"指代Openpilot功能开关，通过"+/-"明确显示状态的触发逻辑，符合车载系统中文交互习惯）</translation>
+（注：根据openpilot系统特性，采用&quot;主控&quot;对应ACC电源状态，&quot;OP&quot;指代Openpilot功能开关，通过&quot;+/-&quot;明确显示状态的触发逻辑，符合车载系统中文交互习惯）</translation>
     </message>
     <message>
         <source>Hide HUD When Moves above:</source>
-        <translation type="deepseek-chat">移动时隐藏HUD，当高于：</translation>
+        <translation>移动时隐藏HUD，当高于：</translation>
     </message>
     <message>
         <source>To prevent screen burn-in, hide Speed, MAX Speed, and Steering/DM Icons when the car moves.
 Off = Stock Behavior
 1 km/h ≈ 0.6 mph</source>
-        <translation type="deepseek-chat">为防止屏幕烧屏，车辆行驶时隐藏速度、最高限速及转向/驾驶员监控图标。
+        <translation>为防止屏幕烧屏，车辆行驶时隐藏速度、最高限速及转向/驾驶员监控图标。
 关闭 = 保持原车默认行为
 1 公里/小时 ≈ 0.6 英里/小时
 
-（注：采用符合汽车行业术语习惯的表述，"MAX Speed"译为"最高限速"更符合车载系统语境；"Steering/DM Icons"扩展为"转向/驾驶员监控图标"确保功能明确；单位换算保留原始精度；"Stock Behavior"译为"原车默认行为"准确传达系统初始设置含义）</translation>
+（注：采用符合汽车行业术语习惯的表述，&quot;MAX Speed&quot;译为&quot;最高限速&quot;更符合车载系统语境；&quot;Steering/DM Icons&quot;扩展为&quot;转向/驾驶员监控图标&quot;确保功能明确；单位换算保留原始精度；&quot;Stock Behavior&quot;译为&quot;原车默认行为&quot;准确传达系统初始设置含义）</translation>
     </message>
     <message>
         <source> km/h</source>
-        <translation type="deepseek-chat">公里/小时</translation>
+        <translation>公里/小时</translation>
     </message>
     <message>
         <source>Device</source>
-        <translation type="deepseek-chat">设备</translation>
+        <translation>设备</translation>
     </message>
     <message>
         <source>Enable Right-Hand Drive Mode</source>
-        <translation type="deepseek-chat">启用右侧驾驶模式</translation>
+        <translation>启用右侧驾驶模式</translation>
     </message>
     <message>
         <source>Allow openpilot to obey right-hand traffic conventions on right driver seat.</source>
-        <translation type="deepseek-chat">允许openpilot在右侧驾驶座上遵守右侧交通规则。</translation>
+        <translation>允许openpilot在右侧驾驶座上遵守右侧交通规则。</translation>
     </message>
     <message>
         <source>Disable Driver Monitoring</source>
-        <translation type="deepseek-chat">禁用驾驶员监控</translation>
+        <translation>禁用驾驶员监控</translation>
     </message>
     <message>
         <source>Enable Beep (Warning)</source>
-        <translation type="deepseek-chat">启用提示音（警告）</translation>
+        <translation>启用提示音（警告）</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation type="deepseek-chat">警告</translation>
+        <translation>警告</translation>
     </message>
     <message>
         <source>Audible Alert Mode</source>
-        <translation type="deepseek-chat">声音提示模式</translation>
+        <translation>声音提示模式</translation>
     </message>
     <message>
         <source>Warning - Only emits sound when there is a warning.
 Off - Does not emit any sound at all.</source>
-        <translation type="deepseek-chat">警告 - 仅在出现警告时发出声音。
+        <translation>警告 - 仅在出现警告时发出声音。
 关闭 - 完全不发出任何声音。</translation>
     </message>
     <message>
         <source>Auto Shutdown In:</source>
-        <translation type="deepseek-chat">自动关机倒计时：</translation>
+        <translation>自动关机倒计时：</translation>
     </message>
     <message>
         <source>0 mins = Immediately</source>
-        <translation type="deepseek-chat">0 分钟 = 立即</translation>
+        <translation>0 分钟 = 立即</translation>
     </message>
     <message>
         <source> mins</source>
-        <translation type="deepseek-chat">分钟</translation>
+        <translation>分钟</translation>
     </message>
     <message>
         <source>Lite</source>
-        <translation type="deepseek-chat">轻量版</translation>
+        <translation>轻量版</translation>
     </message>
     <message>
         <source>Full</source>
-        <translation type="deepseek-chat">已满</translation>
+        <translation>已满</translation>
     </message>
     <message>
         <source>dashy</source>
-        <translation type="deepseek-chat">仪表盘</translation>
+        <translation>仪表盘</translation>
     </message>
     <message>
-        <source>dashy - dragonpilot's all-in-one system hub for you.
+        <source>dashy - dragonpilot&apos;s all-in-one system hub for you.
 
 Visit http://&lt;device_ip&gt;:5088 to access.
 
 Off - Turn off dashy completely.
 Lite: File Manager only.
 Full: File Manager + Live Stream.</source>
-        <translation type="deepseek-chat">仪表盘中心 - 专为DragonPilot打造的一体化系统中枢。
+        <translation>仪表盘中心 - 专为DragonPilot打造的一体化系统中枢。
 
 访问 http://&lt;设备IP&gt;:5088 进入。
 
@@ -398,35 +398,35 @@ Full: File Manager + Live Stream.</source>
     </message>
     <message>
         <source>Delay Starting Loggerd for:</source>
-        <translation type="deepseek-chat">延迟启动Loggerd，原因：</translation>
+        <translation>延迟启动Loggerd，原因：</translation>
     </message>
     <message>
         <source>Delays the startup of loggerd and its related processes when the device goes on-road.
 This prevents the initial moments of a drive from being recorded, protecting location privacy at the start of a trip.</source>
-        <translation type="deepseek-chat">当设备进入行驶状态时，延迟启动loggerd及其相关进程。
+        <translation>当设备进入行驶状态时，延迟启动loggerd及其相关进程。
 此举可避免记录驾驶初始阶段的数据，有效保护行程开始时的位置隐私。
 
 （注：采用技术文档常用句式，将被动语态转换为主动表述；“on-road”译为“行驶状态”更符合中文驾驶场景表述；通过“此举”实现上下文逻辑衔接；使用“有效保护”强化功能价值说明，符合中文技术文档的简洁专业风格）</translation>
     </message>
     <message>
         <source> secs</source>
-        <translation type="deepseek-chat">秒</translation>
+        <translation>秒</translation>
     </message>
     <message>
         <source>Reset dragonpilot settings</source>
-        <translation type="deepseek-chat">重置dragonpilot设置</translation>
+        <translation>重置dragonpilot设置</translation>
     </message>
     <message>
         <source>RESET</source>
-        <translation type="deepseek-chat">重置</translation>
+        <translation>重置</translation>
     </message>
     <message>
         <source>Are you sure you want to reset all settings?</source>
-        <translation type="deepseek-chat">您确定要重置所有设置吗？</translation>
+        <translation>您确定要重置所有设置吗？</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="deepseek-chat">重置</translation>
+        <translation>重置</translation>
     </message>
 </context>
 <context>
@@ -463,7 +463,7 @@ This prevents the initial moments of a drive from being recorded, protecting loc
         <translation>警告：此车辆的 openpilot 纵向控制功能目前处于Alpha版本，使用此功能将会停用自动紧急制动（AEB）功能。</translation>
     </message>
     <message>
-        <source>On this car, openpilot defaults to the car's built-in ACC instead of openpilot's longitudinal control. Enable this to switch to openpilot longitudinal control. Enabling Experimental mode is recommended when enabling openpilot longitudinal control alpha.</source>
+        <source>On this car, openpilot defaults to the car&apos;s built-in ACC instead of openpilot&apos;s longitudinal control. Enable this to switch to openpilot longitudinal control. Enabling Experimental mode is recommended when enabling openpilot longitudinal control alpha.</source>
         <translation>在这辆车上，openpilot 默认使用车辆内建的主动巡航控制（ACC），而非 openpilot 的纵向控制。启用此项功能可切换至 openpilot 的纵向控制。当启用 openpilot 纵向控制 Alpha 版本时，建议同时启用实验性模式（Experimental mode）。</translation>
     </message>
     <message>
@@ -673,7 +673,7 @@ Steering lag calibration is complete.</source>
     <message>
         <source>openpilot learns to drive by watching humans, like you, drive.
 
-Firehose Mode allows you to maximize your training data uploads to improve openpilot's driving models. More data means bigger models, which means better Experimental Mode.</source>
+Firehose Mode allows you to maximize your training data uploads to improve openpilot&apos;s driving models. More data means bigger models, which means better Experimental Mode.</source>
         <translation>openpilot 通过观察人类驾驶（包括您）来学习如何驾驶。
 
 “Firehose 模式”允许您最大化上传训练数据，以改进 openpilot 的驾驶模型。更多数据意味着更强大的模型，也就意味着更优秀的“实验模式”。</translation>
@@ -687,7 +687,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>激活中</translation>
     </message>
     <message>
-        <source>For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.&lt;br&gt;&lt;br&gt;Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Frequently Asked Questions&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;Does it matter how or where I drive?&lt;/i&gt; Nope, just drive as you normally would.&lt;br&gt;&lt;br&gt;&lt;i&gt;Do all of my segments get pulled in Firehose Mode?&lt;/i&gt; No, we selectively pull a subset of your segments.&lt;br&gt;&lt;br&gt;&lt;i&gt;What's a good USB-C adapter?&lt;/i&gt; Any fast phone or laptop charger should be fine.&lt;br&gt;&lt;br&gt;&lt;i&gt;Does it matter which software I run?&lt;/i&gt; Yes, only upstream openpilot (and particular forks) are able to be used for training.</source>
+        <source>For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.&lt;br&gt;&lt;br&gt;Firehose Mode can also work while you&apos;re driving if connected to a hotspot or unlimited SIM card.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Frequently Asked Questions&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;Does it matter how or where I drive?&lt;/i&gt; Nope, just drive as you normally would.&lt;br&gt;&lt;br&gt;&lt;i&gt;Do all of my segments get pulled in Firehose Mode?&lt;/i&gt; No, we selectively pull a subset of your segments.&lt;br&gt;&lt;br&gt;&lt;i&gt;What&apos;s a good USB-C adapter?&lt;/i&gt; Any fast phone or laptop charger should be fine.&lt;br&gt;&lt;br&gt;&lt;i&gt;Does it matter which software I run?&lt;/i&gt; Yes, only upstream openpilot (and particular forks) are able to be used for training.</source>
         <translation>为了达到最佳效果，请每周将您的设备带回室内，并连接到优质的 USB-C 充电器和 Wi-Fi。&lt;br&gt;&lt;br&gt;Firehose 模式在行驶时也能运行，但需连接到移动热点或使用不限流量的 SIM 卡。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;常见问题&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;我开车的方式或地点有影响吗？&lt;/i&gt;不会，请像平常一样驾驶即可。&lt;br&gt;&lt;br&gt;&lt;i&gt;Firehose 模式会上传所有的驾驶片段吗？&lt;/i&gt;不会，我们会选择性地上传部分片段。&lt;br&gt;&lt;br&gt;&lt;i&gt;什么是好的 USB-C 充电器？&lt;/i&gt;任何快速手机或笔记本电脑充电器都应该适用。&lt;br&gt;&lt;br&gt;&lt;i&gt;我使用的软件版本有影响吗？&lt;/i&gt;有的，只有官方 openpilot（以及特定的分支）可以用于训练。</translation>
     </message>
     <message numerus="yes">
@@ -697,8 +697,8 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         </translation>
     </message>
     <message>
-        <source>&lt;span stylesheet='font-size: 60px; font-weight: bold; color: #e74c3c;'&gt;INACTIVE&lt;/span&gt;: connect to an unmetered network</source>
-        <translation>&lt;span stylesheet='font-size: 60px; font-weight: bold; color: #e74c3c;'&gt;闲置&lt;/span&gt;：请连接到不限流量的网络</translation>
+        <source>&lt;span stylesheet=&apos;font-size: 60px; font-weight: bold; color: #e74c3c;&apos;&gt;INACTIVE&lt;/span&gt;: connect to an unmetered network</source>
+        <translation>&lt;span stylesheet=&apos;font-size: 60px; font-weight: bold; color: #e74c3c;&apos;&gt;闲置&lt;/span&gt;：请连接到不限流量的网络</translation>
     </message>
     <message>
         <source>Firehose Mode</source>
@@ -737,11 +737,11 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <name>ModelSelector</name>
     <message>
         <source>Vehicle Model:</source>
-        <translation type="deepseek-chat">车型：</translation>
+        <translation>车型：</translation>
     </message>
     <message>
         <source>[AUTO DETECT]</source>
-        <translation type="deepseek-chat">[自动检测]</translation>
+        <translation>[自动检测]</translation>
     </message>
 </context>
 <context>
@@ -766,8 +766,8 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>输入密码</translation>
     </message>
     <message>
-        <source>for "%1"</source>
-        <translation>网络名称："%1"</translation>
+        <source>for &quot;%1&quot;</source>
+        <translation>网络名称：&quot;%1&quot;</translation>
     </message>
     <message>
         <source>Wrong password</source>
@@ -777,11 +777,11 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
 <context>
     <name>OffroadAlert</name>
     <message>
-        <source>Immediately connect to the internet to check for updates. If you do not connect to the internet, openpilot won't engage in %1</source>
+        <source>Immediately connect to the internet to check for updates. If you do not connect to the internet, openpilot won&apos;t engage in %1</source>
         <translation>请立即连接网络检查更新。如果不连接网络，openpilot 将在 %1 后便无法使用</translation>
     </message>
     <message>
-        <source>Connect to internet to check for updates. openpilot won't automatically start until it connects to internet to check for updates.</source>
+        <source>Connect to internet to check for updates. openpilot won&apos;t automatically start until it connects to internet to check for updates.</source>
         <translation>请连接至互联网以检查更新。在连接至互联网并完成更新检查之前，openpilot 将不会自动启动。</translation>
     </message>
     <message>
@@ -791,11 +791,11 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
 %1</translation>
     </message>
     <message>
-        <source>Taking camera snapshots. System won't start until finished.</source>
+        <source>Taking camera snapshots. System won&apos;t start until finished.</source>
         <translation>正在使用相机拍摄中。在完成之前，系统将无法启动。</translation>
     </message>
     <message>
-        <source>An update to your device's operating system is downloading in the background. You will be prompted to update when it's ready to install.</source>
+        <source>An update to your device&apos;s operating system is downloading in the background. You will be prompted to update when it&apos;s ready to install.</source>
         <translation>一个针对您设备的操作系统更新正在后台下载中。当更新准备好安装时，您将收到提示进行更新。</translation>
     </message>
     <message>
@@ -807,7 +807,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>openpilot 无法识别您的车辆。您的车辆可能未被支持，或是其电控单元 (ECU) 未被识别。请提交一个 Pull Request 为您的车辆添加正确的固件版本。需要帮助吗？请加入 discord.comma.ai。</translation>
     </message>
     <message>
-        <source>openpilot detected a change in the device's mounting position. Ensure the device is fully seated in the mount and the mount is firmly secured to the windshield.</source>
+        <source>openpilot detected a change in the device&apos;s mounting position. Ensure the device is fully seated in the mount and the mount is firmly secured to the windshield.</source>
         <translation>openpilot 检测到设备的安装位置发生变化。请确保设备完全安装在支架上，并确保支架牢固地固定在挡风玻璃上。</translation>
     </message>
     <message>
@@ -827,7 +827,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>推迟更新</translation>
     </message>
     <message>
-        <source>openpilot detected excessive %1 actuation on your last drive. Please contact support at https://comma.ai/support and share your device's Dongle ID for troubleshooting.</source>
+        <source>openpilot detected excessive %1 actuation on your last drive. Please contact support at https://comma.ai/support and share your device&apos;s Dongle ID for troubleshooting.</source>
         <translation>openpilot 在您上一次驾驶中，检测到过度的 %1 作动。请访问 https://comma.ai/support 联系客服，并提供您设备的 Dongle ID 以便进行故障排查。</translation>
     </message>
 </context>
@@ -880,7 +880,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>在手机上访问 https://connect.comma.ai</translation>
     </message>
     <message>
-        <source>Click "add new device" and scan the QR code on the right</source>
+        <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
         <translation>点击“添加新设备”，扫描右侧二维码</translation>
     </message>
     <message>
@@ -975,11 +975,11 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     </message>
     <message>
         <source>Show Last Errors</source>
-        <translation type="deepseek-chat">显示最后错误</translation>
+        <translation>显示最后错误</translation>
     </message>
     <message>
         <source>dragonpilot</source>
-        <translation type="deepseek-chat">龙驾驶助手</translation>
+        <translation>龙驾驶助手</translation>
     </message>
 </context>
 <context>
@@ -1179,23 +1179,23 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     </message>
     <message>
         <source>Onroad/Offroad Mode</source>
-        <translation type="deepseek-chat">行车/越野模式</translation>
+        <translation>行车/越野模式</translation>
     </message>
     <message>
         <source>Go Offroad</source>
-        <translation type="deepseek-chat">越野模式</translation>
+        <translation>越野模式</translation>
     </message>
     <message>
         <source>Are you sure you want to switch mode?</source>
-        <translation type="deepseek-chat">您确定要切换模式吗？</translation>
+        <translation>您确定要切换模式吗？</translation>
     </message>
     <message>
         <source>CONFIRM</source>
-        <translation type="deepseek-chat">确认</translation>
+        <translation>确认</translation>
     </message>
     <message>
         <source>Go Onroad</source>
-        <translation type="deepseek-chat">上路行驶</translation>
+        <translation>上路行驶</translation>
     </message>
 </context>
 <context>
@@ -1225,7 +1225,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>删除</translation>
     </message>
     <message>
-        <source>Username '%1' has no keys on GitHub</source>
+        <source>Username &apos;%1&apos; has no keys on GitHub</source>
         <translation>用户名“%1”在GitHub上没有密钥</translation>
     </message>
     <message>
@@ -1233,7 +1233,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>请求超时</translation>
     </message>
     <message>
-        <source>Username '%1' doesn't exist on GitHub</source>
+        <source>Username &apos;%1&apos; doesn&apos;t exist on GitHub</source>
         <translation>GitHub上不存在用户名“%1”</translation>
     </message>
 </context>
@@ -1259,8 +1259,8 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>欢迎使用 openpilot</translation>
     </message>
     <message>
-        <source>You must accept the Terms and Conditions to use openpilot. Read the latest terms at &lt;span style='color: #465BEA;'&gt;https://comma.ai/terms&lt;/span&gt; before continuing.</source>
-        <translation>您必须接受《条款与条件》才能使用 openpilot。在继续之前，请先阅读最新条款：&lt;span style='color: #465BEA;'&gt;https://comma.ai/terms&lt;/span&gt;。</translation>
+        <source>You must accept the Terms and Conditions to use openpilot. Read the latest terms at &lt;span style=&apos;color: #465BEA;&apos;&gt;https://comma.ai/terms&lt;/span&gt; before continuing.</source>
+        <translation>您必须接受《条款与条件》才能使用 openpilot。在继续之前，请先阅读最新条款：&lt;span style=&apos;color: #465BEA;&apos;&gt;https://comma.ai/terms&lt;/span&gt;。</translation>
     </message>
 </context>
 <context>
@@ -1306,7 +1306,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>测试模式</translation>
     </message>
     <message>
-        <source>openpilot defaults to driving in &lt;b&gt;chill mode&lt;/b&gt;. Experimental mode enables &lt;b&gt;alpha-level features&lt;/b&gt; that aren't ready for chill mode. Experimental features are listed below:</source>
+        <source>openpilot defaults to driving in &lt;b&gt;chill mode&lt;/b&gt;. Experimental mode enables &lt;b&gt;alpha-level features&lt;/b&gt; that aren&apos;t ready for chill mode. Experimental features are listed below:</source>
         <translation>openpilot 默认 &lt;b&gt;轻松模式&lt;/b&gt;驾驶车辆。试验模式启用一些轻松模式之外的 &lt;b&gt;试验性功能&lt;/b&gt;。试验性功能包括：</translation>
     </message>
     <message>
@@ -1318,7 +1318,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>新驾驶视角</translation>
     </message>
     <message>
-        <source>Experimental mode is currently unavailable on this car since the car's stock ACC is used for longitudinal control.</source>
+        <source>Experimental mode is currently unavailable on this car since the car&apos;s stock ACC is used for longitudinal control.</source>
         <translation>由于此车辆使用自带的ACC纵向控制，当前无法使用试验模式。</translation>
     </message>
     <message>
@@ -1390,7 +1390,7 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation type="vanished">使用“车道保持”按钮录制音频反馈</translation>
     </message>
     <message>
-        <source>Press the LKAS button to record and share driving feedback with the openpilot team. When this toggle is disabled, the button acts as a bookmark button. The event will be highlighted in comma connect and the segment will be preserved on your device's storage.
+        <source>Press the LKAS button to record and share driving feedback with the openpilot team. When this toggle is disabled, the button acts as a bookmark button. The event will be highlighted in comma connect and the segment will be preserved on your device&apos;s storage.
 
 Note that this feature is only compatible with select cars.</source>
         <translation type="vanished">按下“车道保持”按钮，即可录制并分享驾驶反馈给 openpilot 团队。当此开关禁用时，该按钮将用作书签按钮。该事件将在 comma connect 中高亮显示，且对应的视频片段将被保留在您的设备存储空间中。
@@ -1399,11 +1399,11 @@ Note that this feature is only compatible with select cars.</source>
     </message>
     <message>
         <source>Disable Logging</source>
-        <translation type="deepseek-chat">禁用日志记录</translation>
+        <translation>禁用日志记录</translation>
     </message>
     <message>
         <source>Disable Updates</source>
-        <translation type="deepseek-chat">禁用更新</translation>
+        <translation>禁用更新</translation>
     </message>
 </context>
 <context>
@@ -1413,12 +1413,12 @@ Note that this feature is only compatible with select cars.</source>
         <translation>开启</translation>
     </message>
     <message>
-        <source>Maximize your training data uploads to improve openpilot's driving models.</source>
+        <source>Maximize your training data uploads to improve openpilot&apos;s driving models.</source>
         <translation>最大化您的训练数据上传，以改善 openpilot 的驾驶模型。</translation>
     </message>
     <message>
-        <source>&lt;span style='font-family: "Noto Color Emoji";'&gt;🔥&lt;/span&gt; Firehose Mode &lt;span style='font-family: Noto Color Emoji;'&gt;🔥&lt;/span&gt;</source>
-        <translation>&lt;span style='font-family: "Noto Color Emoji";'&gt;🔥&lt;/span&gt; Firehose 模式 &lt;span style='font-family: Noto Color Emoji;'&gt;🔥&lt;/span&gt;</translation>
+        <source>&lt;span style=&apos;font-family: &quot;Noto Color Emoji&quot;;&apos;&gt;🔥&lt;/span&gt; Firehose Mode &lt;span style=&apos;font-family: Noto Color Emoji;&apos;&gt;🔥&lt;/span&gt;</source>
+        <translation>&lt;span style=&apos;font-family: &quot;Noto Color Emoji&quot;;&apos;&gt;🔥&lt;/span&gt; Firehose 模式 &lt;span style=&apos;font-family: Noto Color Emoji;&apos;&gt;🔥&lt;/span&gt;</translation>
     </message>
 </context>
 <context>
@@ -1436,8 +1436,8 @@ Note that this feature is only compatible with select cars.</source>
         <translation>忽略</translation>
     </message>
     <message>
-        <source>Forget Wi-Fi Network "%1"?</source>
-        <translation>忽略WiFi网络 "%1"?</translation>
+        <source>Forget Wi-Fi Network &quot;%1&quot;?</source>
+        <translation>忽略WiFi网络 &quot;%1&quot;?</translation>
     </message>
     <message>
         <source>Forget</source>
