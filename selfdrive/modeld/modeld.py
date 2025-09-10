@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import os
 from openpilot.system.hardware import TICI
-os.environ['DEV'] = 'QCOM' if TICI else 'LLVM'
+os.environ['DEV'] = 'QCOM' if TICI else 'GPU'
 USBGPU = "USBGPU" in os.environ
 if USBGPU:
-  os.environ['DEV'] = 'AMD'
+  os.environ['DEV'] = 'GPU'
   os.environ['AMD_IFACE'] = 'USB'
 from tinygrad.tensor import Tensor
 from tinygrad.dtype import dtypes
@@ -124,9 +124,13 @@ class ModelState:
 
     with open(VISION_PKL_PATH, "rb") as f:
       self.vision_run = pickle.load(f)
+      if hasattr(self.vision_run, 'device'):
+        self.vision_run.device = 'GPU'
 
     with open(POLICY_PKL_PATH, "rb") as f:
       self.policy_run = pickle.load(f)
+      if hasattr(self.policy_run, 'device'):
+        self.policy_run.device = 'GPU'
 
   def slice_outputs(self, model_outputs: np.ndarray, output_slices: dict[str, slice]) -> dict[str, np.ndarray]:
     parsed_model_outputs = {k: model_outputs[np.newaxis, v] for k,v in output_slices.items()}
@@ -155,7 +159,7 @@ class ModelState:
     else:
       for key in imgs_cl:
         frame_input = self.frames[key].buffer_from_cl(imgs_cl[key]).reshape(self.vision_input_shapes[key])
-        self.vision_inputs[key] = Tensor(frame_input, dtype=dtypes.uint8).realize()
+        self.vision_inputs[key] = Tensor(frame_input, dtype=dtypes.uint8, device='GPU').realize()
 
     if prepare_only:
       return None

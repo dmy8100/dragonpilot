@@ -55,7 +55,7 @@ mat4 AnnotatedCameraWidget::calcFrameMatrix() {
    // Compute the calibration transformation matrix
   const auto calib_transform = intrinsic_matrix * calibration;
 
-  float zoom = wide_cam ? 2.0 : 1.1;
+  float zoom = wide_cam ? 1.5 : 1.0;
   Eigen::Vector3f inf(1000., 0., 0.);
   auto Kep = calib_transform * inf;
 
@@ -115,12 +115,12 @@ void AnnotatedCameraWidget::paintGL() {
     bool has_wide_cam = available_streams.count(VISION_STREAM_WIDE_ROAD);
     if (has_wide_cam) {
       float v_ego = sm["carState"].getCarState().getVEgo();
-      if ((v_ego < 10) || available_streams.size() == 1) {
+      if ((v_ego < 1) || available_streams.size() == 1) {
         wide_cam_requested = true;
-      } else if (v_ego > 15) {
+      } else if (v_ego > 6) {
         wide_cam_requested = false;
       }
-      wide_cam_requested = wide_cam_requested && sm["selfdriveState"].getSelfdriveState().getExperimentalMode();
+      //wide_cam_requested = wide_cam_requested && sm["selfdriveState"].getSelfdriveState().getExperimentalMode();
     }
     CameraWidget::setStreamType(wide_cam_requested ? VISION_STREAM_WIDE_ROAD : VISION_STREAM_ROAD);
     CameraWidget::setFrameId(sm["modelV2"].getModelV2().getFrameId());
