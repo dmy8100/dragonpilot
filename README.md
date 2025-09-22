@@ -1,3 +1,5 @@
+ ## ! ! ! 免责声明！！！
+本仓库只是用来知识共享学习；请遵守当地法律法规，所产生的一切后果与开发者无关！
 <div align="center" style="text-align: center;">
 
 <h1>openpilot</h1>
@@ -13,7 +15,7 @@
   <span> · </span>
   <a href="https://docs.comma.ai/contributing/roadmap/">Roadmap</a>
   <span> · </span>
-  <a href="https://github.com/commaai/openpilot/blob/master/docs/CONTRIBUTING.md">Contribute</a>
+  <a href="https://bgithub.xyz/commaai/openpilot/blob/master/docs/CONTRIBUTING.md">Contribute</a>
   <span> · </span>
   <a href="https://discord.comma.ai">Community</a>
   <span> · </span>
@@ -31,9 +33,9 @@ Quick start: `bash <(curl -fsSL openpilot.comma.ai)`
 
 <table>
   <tr>
-    <td><a href="https://youtu.be/NmBfgOanCyk" title="Video By Greer Viau"><img src="https://github.com/commaai/openpilot/assets/8762862/2f7112ae-f748-4f39-b617-fabd689c3772"></a></td>
-    <td><a href="https://youtu.be/VHKyqZ7t8Gw" title="Video By Logan LeGrand"><img src="https://github.com/commaai/openpilot/assets/8762862/92351544-2833-40d7-9e0b-7ef7ae37ec4c"></a></td>
-    <td><a href="https://youtu.be/SUIZYzxtMQs" title="A drive to Taco Bell"><img src="https://github.com/commaai/openpilot/assets/8762862/05ceefc5-2628-439c-a9b2-89ce77dc6f63"></a></td>
+    <td><a href="https://youtu.be/NmBfgOanCyk" title="Video By Greer Viau"><img src="https://bgithub.xyz/commaai/openpilot/assets/8762862/2f7112ae-f748-4f39-b617-fabd689c3772"></a></td>
+    <td><a href="https://youtu.be/VHKyqZ7t8Gw" title="Video By Logan LeGrand"><img src="https://bgithub.xyz/commaai/openpilot/assets/8762862/92351544-2833-40d7-9e0b-7ef7ae37ec4c"></a></td>
+    <td><a href="https://youtu.be/SUIZYzxtMQs" title="A drive to Taco Bell"><img src="https://bgithub.xyz/commaai/openpilot/assets/8762862/05ceefc5-2628-439c-a9b2-89ce77dc6f63"></a></td>
   </tr>
 </table>
 
