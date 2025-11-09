@@ -233,13 +233,12 @@ void ModelRenderer::drawLiveTracks(QPainter &painter,
 
   // Set text properties
   painter.setPen(Qt::white);
-  painter.setFont(QFont("Inter", 24, QFont::Bold));
+  painter.setFont(QFont("Inter", 32, QFont::Bold));
 
   // Iterate through each radar point from live_tracks
   for (const auto& point : live_tracks.getPoints()) {
     float dRel = point.getDRel();
     float yRel = point.getYRel();
-    float yvRel = point.getYvRel();
     float vRel = point.getVRel();
 
     // Calculate Z-coordinate using the model's path
@@ -253,22 +252,49 @@ void ModelRenderer::drawLiveTracks(QPainter &painter,
     QPointF screen_pos;
     // mapToScreen projects a point from car space to screen space
     if (mapToScreen(dRel, -yRel, z_on_path, &screen_pos)) { // yRel is negated as in update_leads
-      // Basic drawing: Draw a small circle for the point
-      painter.setBrush(QColor(255, 0, 0, 200)); // Cyan color for live tracks
-      painter.drawEllipse(screen_pos, 10, 10); // Draw a small circle of radius 5
+      // Calculate absolute speed (vRel is relative speed, need to add ego vehicle speed)
+      float v_ego = (*uiState()->sm)["carState"].getCarState().getVEgo();
+      float absolute_speed = vRel + v_ego;
 
-      // Prepare text to display
-      QString infoText = QString("ID: %1\nd: %2 m\ny: %3 m\ndV: %4 m/s\nyV: %5 m/s")
-                           .arg(point.getTrackId())
-                           .arg(dRel, 0, 'f', 2)
-                           .arg(yRel, 0, 'f', 2)
-                           .arg(vRel, 0, 'f', 2)
-                           .arg(yvRel, 0, 'f', 2);
+      // Skip drawing if absolute speed is less than 2 km/h
+      if (absolute_speed * 3.6 < 5) {
+        continue;
+      }
 
-      // Draw text near the point
-      // Adjust text position for better visibility (e.g., slightly offset from the point)
-      QRectF textRect(screen_pos.x() + 10, screen_pos.y() - 20, 250, 250); // Adjust size as needed
-      painter.drawText(textRect, Qt::AlignLeft, infoText);
+      // Prepare text to display - only absolute speed (no unit)
+      QString speedText = QString("%1").arg(absolute_speed * 3.6, 0, 'f', 0);
+
+      // Calculate text bounding rect
+      QFontMetrics metrics(painter.font());
+      QRect textRect = metrics.boundingRect(speedText);
+
+      // Define rounded rectangle dimensions (smaller, just slightly larger than text)
+      int rectWidth = textRect.width() + 12;  // Minimal padding
+      int rectHeight = textRect.height() + 6;
+      int cornerRadius = 6;
+
+      // Position the rectangle centered above the target point
+      QRectF roundedRect(screen_pos.x() - rectWidth/2, screen_pos.y() - rectHeight - 15,
+                         rectWidth, rectHeight);
+
+      // Determine if target is in the same lane (based on lateral position)
+      bool is_same_lane = std::abs(yRel) < 1.5; // Within 1.5 meters laterally is considered same lane
+
+      // Set color based on lane position
+      if (is_same_lane) {
+        // Same lane - green for lead vehicle
+        painter.setBrush(QColor(0, 200, 0, 120)); // More transparent green
+        painter.setPen(QPen(QColor(0, 150, 0), 1)); // Thinner darker green border
+      } else {
+        // Different lane - yellow for other vehicles
+        painter.setBrush(QColor(255, 200, 0, 120)); // More transparent yellow
+        painter.setPen(QPen(QColor(200, 150, 0), 1)); // Thinner darker yellow border
+      }
+      painter.drawRoundedRect(roundedRect, cornerRadius, cornerRadius);
+
+      // Draw speed text centered in the rectangle
+      painter.setPen(Qt::white);
+      painter.drawText(roundedRect, Qt::AlignCenter, speedText);
     }
   }
 }
@@ -304,6 +330,31 @@ void ModelRenderer::drawLead(QPainter &painter, const cereal::RadarState::LeadDa
   QPointF chevron[] = {{x + (sz * 1.25), y + sz}, {x, y}, {x - (sz * 1.25), y + sz}};
   painter.setBrush(QColor(201, 34, 49, fillAlpha));
   painter.drawPolygon(chevron, std::size(chevron));
+
+  // Draw distance below the chevron
+  painter.setFont(QFont("Inter", 32, QFont::Bold));
+  QString distanceText = QString("%1").arg(d_rel, 0, 'f', 1);
+
+  // Calculate text bounding rect
+  QFontMetrics metrics(painter.font());
+  QRect textRect = metrics.boundingRect(distanceText);
+
+  // Define rounded rectangle dimensions
+  int rectWidth = textRect.width() + 12;  // Add padding
+  int rectHeight = textRect.height() + 6;
+  int cornerRadius = 6;
+
+  // Position the rectangle centered below the chevron
+  QRectF roundedRect(x - rectWidth/2, y + sz + 10, rectWidth, rectHeight);
+
+  // Draw rounded rectangle with same color as chevron
+  painter.setBrush(QColor(201, 34, 49, fillAlpha));
+  painter.setPen(QPen(QColor(180, 20, 40), 1)); // Slightly darker border
+  painter.drawRoundedRect(roundedRect, cornerRadius, cornerRadius);
+
+  // Draw distance text centered in the rectangle
+  painter.setPen(Qt::white);
+  painter.drawText(roundedRect, Qt::AlignCenter, distanceText);
 }
 
 // Projects a point in car to space to the corresponding point in full frame image space.
