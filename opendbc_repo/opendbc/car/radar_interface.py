@@ -22,7 +22,7 @@ from opendbc.car.structs import RadarData
 from typing import List, Tuple
 
 # car head to radar
-DREL_OFFSET = -1.35
+DREL_OFFSET = -0.15
 
 # max object amount will process
 MAX_OBJECTS = 100

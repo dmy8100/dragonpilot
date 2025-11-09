@@ -35,7 +35,6 @@ Elementwise ops operate on a per element basis. They don't change the shape of t
 
 ::: tinygrad.Tensor.relu
 ::: tinygrad.Tensor.sigmoid
-::: tinygrad.Tensor.logsigmoid
 ::: tinygrad.Tensor.hardsigmoid
 ::: tinygrad.Tensor.elu
 ::: tinygrad.Tensor.celu
