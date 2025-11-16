@@ -31,7 +31,7 @@ MAX_OBJECTS = 100
 MAX_LAT_DIST = 3.6
 
 # objects to ignore thats really close to the vehicle (after DREL_OFFSET applied)
-MIN_DIST = 2.5
+MIN_DIST = 0.5
 
 # when a object has really large negative v_rel means its stationary / standstill
 # so with the values below (v_rel = -10, lat_dist = 2.), we are trying to ignore:

@@ -23,7 +23,7 @@ SPEED, ACCEL = 0, 1     # Kalman filter states enum
 V_EGO_STATIONARY = 4.   # no stationary object flag below this speed
 
 RADAR_TO_CENTER = 2.7   # (deprecated) RADAR is ~ 2.7m ahead from center of car
-RADAR_TO_CAMERA = 1.52  # RADAR is ~ 1.5m ahead from center of mesh frame
+RADAR_TO_CAMERA = 1.55  # RADAR is ~ 1.5m ahead from center of mesh frame
 
 
 class KalmanParams:
@@ -197,6 +197,7 @@ class RadarD:
     self.radar_state_valid = False
 
     self.ready = False
+    self.fcw_count = 0.0
 
   def update(self, sm: messaging.SubMaster, rr: car.RadarData):
     self.ready = sm.seen['modelV2']
@@ -241,6 +242,33 @@ class RadarD:
     if len(leads_v3) > 1:
       self.radar_state.leadOne = get_lead(self.v_ego, self.ready, self.tracks, leads_v3[0], model_v_ego, low_speed_override=True)
       self.radar_state.leadTwo = get_lead(self.v_ego, self.ready, self.tracks, leads_v3[1], model_v_ego, low_speed_override=False)
+
+    # 紧急雷达逻辑
+    if len(self.tracks) > 0:
+      # max_distance = 7.0 if self.v_ego > 10.0 else 25.0  # 动态距离阈值
+      max_distance = np.interp(self.v_ego, [0.0, 10.0, 20.0], [1.0, 9.0, 20.0])
+      steering_angle = abs(sm['carState'].steeringAngleDeg)
+      # 定义转向角度的影响因子，0 度时因子为 1（无缩减），45 度时因子为 0.5（缩减 50%）
+      max_steering_angle = np.interp(self.v_ego, [0.0, 10.0, 20.0], [45.0, 45.0, 27.0])
+      steering_factor = np.interp(steering_angle, [0.0, max_steering_angle], [1.0, 0.5])
+      # 确保 max_distance 不低于最小值（例如 1.0 米）
+      max_distance = max(1.0, max_distance * steering_factor)
+      close_tracks = [c for c in self.tracks.values() if (0.75 < c.dRel < max_distance) and abs(c.yRel) < 1.0]
+      if len(close_tracks) > 0:
+        self.fcw_count += 1
+        closest_track = min(close_tracks, key=lambda c: c.dRel)
+        ttc = float('inf')
+        if closest_track.vRel < 0:
+          ttc = closest_track.dRel / max(abs(closest_track.vRel), 0.1)
+        ttc_threshold = 0.4 if self.v_ego > 20.0 else 0.6  # 动态 TTC
+        if self.fcw_count > 2:
+          self.radar_state.leadOne = closest_track.get_RadarState()
+          if ttc < ttc_threshold or (ttc < 0.5 and closest_track.dRel < 3.0):
+            self.radar_state.leadOne.fcw = True
+            if ttc < 0.2:
+              self.radar_state.leadOne.modelProb = 11.1
+      else:
+        self.fcw_count = max(0, self.fcw_count - 0.5)
 
   def publish(self, pm: messaging.PubMaster):
     assert self.radar_state is not None
